@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import HText from "../../Shared/HText";
 import Benefit from "./Benefit";
 import ActionButton from "../../Shared/ActionButton";
-import BenefitsPageGraphic from "../../assets/BenefitsPageGraphic.png"
+import BenefitsPageGraphic from "../../assets/BenefitsPageGraphic.png";
 
 const benefits: Array<BenefitType> = [
     {
@@ -71,7 +71,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 <motion.div
                     className="mt-5 items-center justify-between gap-8 md:flex"
                     initial="hidden"
-                    whileInView="visible"
+                    whileInView="visible" 
                     viewport={{ once: true, amount: 0.5 }}
                     variants={container}
                 >
@@ -88,10 +88,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 {/* GRAPHICS AND DESCRIPTION */}
                 <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
                     {/* Graphic */}
-                    <img 
-                    src={BenefitsPageGraphic} 
-                    alt=""
-                    className="mx-auto" />
+                    <img src={BenefitsPageGraphic} alt="" className="mx-auto" />
 
                     {/* description */}
                     <div>
@@ -99,14 +96,14 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         <div className="relative">
                             <div className="before:absolute before:-top-20 before:-left-20 before:content-abstractwaves before:z-[1]">
                                 <motion.div
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{ once: true, amount: 0.5 }}
-                                transition={{ delay: 0.2, duration: 0.5 }}
-                                variants={{
-                                    hidden: { opacity: 0, x: 50 },
-                                    visible: { opacity: 1, x: 0 },
-                                }}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.5 }}
+                                    transition={{ delay: 0.2, duration: 0.5 }}
+                                    variants={{
+                                        hidden: { opacity: 0, x: 50 },
+                                        visible: { opacity: 1, x: 0 },
+                                    }}
                                 >
                                     <HText>
                                         MILLIONS OF HAPPY MEMBERS GETTING{" "}
@@ -120,14 +117,14 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         {/* description */}
 
                         <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                        variants={{
-                            hidden: { opacity: 0, x: 50 },
-                            visible: { opacity: 1, x: 0 },
-                        }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.5 }}
+                            transition={{ delay: 0.2, duration: 0.5 }}
+                            variants={{
+                                hidden: { opacity: 0, x: 50 },
+                                visible: { opacity: 1, x: 0 },
+                            }}
                         >
                             <p className="my-5">
                                 Nascetur aenean massa auctor tincidunt. Iaculis
